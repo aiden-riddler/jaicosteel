@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body class="bg-teal-950 font-sans text-gray-200">
+    <header class="py-5 font-montserrat grid place-content-center">
+      <ul class="flex">
+        <li class="mr-6">
+          <a class="text-blue-500 hover:text-blue-800" href="#">Products</a>
+        </li>
+        <li class="mr-6">
+          <a class="text-blue-500 hover:text-blue-800" href="aboutus.html">About Us</a>
+        </li>
+        <li class="mr-6">
+          <a class="text-blue-500 hover:text-blue-800" href="gallery.html"
+            >Gallery</a
+          >
+        </li>
+        <li class="mr-6">
+          <a class="text-blue-500 hover:text-blue-800" href="contact.html"
+            >Contact Us</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <div>
+      <div id="default-carousel" class="relative w-full" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="custom_h">
+          <!-- Item 1 -->
+          <div
+            class="hidden duration-700 ease-in-out w-full"
+            data-carousel-item
+          >
+            <div class="w-full">
+              <img
+                src="/build/img/gate_loc.jpg"
+                class="custom_h w-full object-cover"
+                alt="..."
+              />
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div
+            class="hidden duration-700 ease-in-out w-full"
+            data-carousel-item
+          >
+            <div class="w-full">
+              <img
+                src="/build/img/mj1.jpg"
+                class="custom_h w-full object-cover"
+                alt="..."
+              />
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div
+            class="hidden duration-700 ease-in-out w-full"
+            data-carousel-item
+          >
+            <div class="w-full">
+              <img
+                src="/build/img/mj3.jpg"
+                class="custom_h w-full object-cover"
+                alt="..."
+              />
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div
+            class="hidden duration-700 ease-in-out w-full"
+            data-carousel-item
+          >
+            <div class="w-full">
+              <img
+                src="/build/img/mj1.jpg"
+                class="custom_h w-full object-cover"
+                alt="..."
+              />
+            </div>
+          </div>
+
+          <!-- Item 1 -->
+          <div
+            class="hidden duration-700 ease-in-out w-full"
+            data-carousel-item
+          >
+            <div class="w-full">
+              <img
+                src="/build/img/gate_loc.jpg"
+                class="custom_h w-full object-cover"
+                alt="..."
+              />
+            </div>
+          </div>
+
+          <!-- Item 1 -->
+          <div
+            class="hidden duration-700 ease-in-out w-full"
+            data-carousel-item
+          >
+            <div class="w-full">
+              <img
+                src="/build/img/building 2.jpg"
+                class="custom_h w-full object-cover"
+                alt="..."
+              />
+            </div>
+          </div>
+
+          <!-- Item 1 -->
+          <div
+            class="hidden duration-700 ease-in-out w-full"
+            data-carousel-item
+          >
+            <div class="w-full">
+              <img
+                src="/build/img/building 3.jpg"
+                class="custom_h w-full object-cover"
+                alt="..."
+              />
+            </div>
+          </div>
+
+          <!-- Item 1 -->
+          <div
+            class="hidden duration-700 ease-in-out w-full"
+            data-carousel-item
+          >
+            <div class="w-full">
+              <img
+                src="/build/img/gate2.jpg"
+                class="custom_h w-full object-cover"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Slider indicators -->
+        <div
+          class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
+        >
+          <button
+            type="button"
+            class="w-2 h-2 rounded-full"
+            aria-current="true"
+            aria-label="Slide 1"
+            data-carousel-slide-to="0"
+          ></button>
+          <button
+            type="button"
+            class="w-2 h-2 rounded-full"
+            aria-current="false"
+            aria-label="Slide 2"
+            data-carousel-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            class="w-2 h-2 rounded-full"
+            aria-current="false"
+            aria-label="Slide 3"
+            data-carousel-slide-to="2"
+          ></button>
+          <button
+            type="button"
+            class="w-2 h-2 rounded-full"
+            aria-current="false"
+            aria-label="Slide 4"
+            data-carousel-slide-to="3"
+          ></button>
+          <button
+            type="button"
+            class="w-2 h-2 rounded-full"
+            aria-current="false"
+            aria-label="Slide 5"
+            data-carousel-slide-to="4"
+          ></button>
+        </div>
+        <!-- Slider controls -->
+        <button
+          type="button"
+          class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-prev
+        >
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+          >
+            <svg
+              class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 1 1 5l4 4"
+              />
+            </svg>
+            <span class="sr-only">Previous</span>
+          </span>
+        </button>
+        <button
+          type="button"
+          class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-next
+        >
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+          >
+            <svg
+              class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 9 4-4-4-4"
+              />
+            </svg>
+            <span class="sr-only">Next</span>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <h5
+      class="my-10 text-center text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"
+    >
+      Pricing
+    </h5>
+
+    <div
+      class="w-3/4 m-auto py-10 grid gap-y-10 gap-x-5 sm:grid-cols-2 lg:grid-cols-3"
+    >
+      <div
+        class="max-w-80 bg-white border border-gray-200 rounded-lg shadow dark:bg-slate-950 dark:border-gray-700"
+      >
+        <div class="grid grid-cols-2 p-0">
+          <!-- First Column (Single Image) -->
+          <img
+            class="h-64 w-full object-cover rounded-tl border-r border-white"
+            src="/build/img/staircase show 3.jpg"
+            alt="Image 1"
+          />
+
+          <!-- Second Column (Two Images) -->
+          <div class="flex flex-col h-64">
+            <img
+              class="h-1/2 w-full object-cover rounded-tr border-b border-white"
+              src="/build/img/staircase show 3.jpg"
+              alt="Image 2"
+            />
+            <img
+              class="h-1/2 w-full object-cover"
+              src="/build/img/staircase show 3.jpg"
+              alt="Image 3"
+            />
+          </div>
+        </div>
+
+        <div class="p-5">
+          <a href="./contact.html">
+            <h5
+              class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+            >
+              Curtain Rods
+            </h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            Ksh 1800/meter
+          </p>
+          <a
+            href="./contact.html"
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Get In Touch
+            <svg
+              class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div
+        class="max-w-80 bg-white border border-gray-200 rounded-lg shadow dark:bg-slate-950 dark:border-gray-700"
+      >
+        <div class="grid grid-cols-2 p-0">
+          <!-- First Column (Single Image) -->
+          <img
+            class="h-64 w-full object-cover rounded-tl border-r border-white"
+            src="/build/img/staircase 6.jpg"
+            alt="Image 1"
+          />
+
+          <!-- Second Column (Two Images) -->
+          <div class="flex flex-col h-64">
+            <img
+              class="h-1/2 w-full object-cover rounded-tr border-b border-white"
+              src="/build/img/staircase show.jpg"
+              alt="Image 2"
+            />
+            <img
+              class="h-1/2 w-full object-cover"
+              src="/build/img/staircase.jpg"
+              alt="Image 3"
+            />
+          </div>
+        </div>
+
+        <div class="p-5">
+          <a href="./contact.html">
+            <h5
+              class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+            >
+              Staircase
+            </h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            Ksh 6000/meter
+          </p>
+          <a
+            href="./contact.html"
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Get In Touch
+            <svg
+              class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div
+        class="max-w-80 bg-white border border-gray-200 rounded-lg shadow dark:bg-slate-950 dark:border-gray-700"
+      >
+        <div class="grid grid-cols-2 p-0">
+          <!-- First Column (Single Image) -->
+          <img
+            class="h-64 w-full object-cover rounded-tl border-r border-white"
+            src="/build/img/interior metals 7 show.jpg"
+            alt="Image 1"
+          />
+
+          <!-- Second Column (Two Images) -->
+          <div class="flex flex-col h-64">
+            <img
+              class="h-1/2 w-full object-cover rounded-tr border-b border-white"
+              src="/build/img/interior metals 8.jpg"
+              alt="Image 2"
+            />
+            <img
+              class="h-1/2 w-full object-cover"
+              src="/build/img/table.jpg"
+              alt="Image 3"
+            />
+          </div>
+        </div>
+
+        <div class="p-5">
+          <a href="./contact.html">
+            <h5
+              class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+            >
+              Coffee table
+            </h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            Ksh 12000
+          </p>
+          <a
+            href="./contact.html"
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Get In Touch
+            <svg
+              class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div
+        class="max-w-80 bg-white border border-gray-200 rounded-lg shadow dark:bg-slate-950 dark:border-gray-700"
+      >
+        <div class="grid grid-cols-2 p-0">
+          <!-- First Column (Single Image) -->
+          <img
+            class="h-64 w-full object-cover rounded-tl border-r border-white"
+            src="/build/img/wall decor.jpg"
+            alt="Image 1"
+          />
+
+          <!-- Second Column (Two Images) -->
+          <div class="flex flex-col h-64">
+            <img
+              class="h-1/2 w-full object-cover rounded-tr border-b border-white"
+              src="/build/img/interior metals 4.jpg"
+              alt="Image 2"
+            />
+            <img
+              class="h-1/2 w-full object-cover"
+              src="/build/img/interior metals 5.jpg"
+              alt="Image 3"
+            />
+          </div>
+        </div>
+
+        <div class="p-5">
+          <a href="./contact.html">
+            <h5
+              class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+            >
+              Flower Stands
+            </h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            Ksh 15000
+          </p>
+          <a
+            href="./contact.html"
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Get In Touch
+            <svg
+              class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div
+        class="max-w-80 bg-white border border-gray-200 rounded-lg shadow dark:bg-slate-950 dark:border-gray-700"
+      >
+        <div class="grid grid-cols-2 p-0">
+          <!-- First Column (Single Image) -->
+          <img
+            class="h-64 w-full object-cover rounded-tl border-r border-white"
+            src="/build/img/gate_loc.jpg"
+            alt="Image 1"
+          />
+
+          <!-- Second Column (Two Images) -->
+          <div class="flex flex-col h-64">
+            <img
+              class="h-1/2 w-full object-cover rounded-tr border-b border-white"
+              src="/build/img/gate2.jpg"
+              alt="Image 2"
+            />
+            <img
+              class="h-1/2 w-full object-cover"
+              src="/build/img/gate.jpg"
+              alt="Image 3"
+            />
+          </div>
+        </div>
+
+        <div class="p-5">
+          <a href="./contact.html">
+            <h5
+              class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+            >
+              Gate
+            </h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            Ksh 120000
+          </p>
+          <a
+            href="./contact.html"
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Get In Touch
+            <svg
+              class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div
+        class="max-w-80 bg-white border border-gray-200 rounded-lg shadow dark:bg-slate-950 dark:border-gray-700"
+      >
+        <div class="grid grid-cols-2 p-0">
+          <!-- First Column (Single Image) -->
+          <img
+            class="h-64 w-full object-cover rounded-tl border-r border-white"
+            src="/build/img/windows 3.jpg"
+            alt="Image 1"
+          />
+
+          <!-- Second Column (Two Images) -->
+          <div class="flex flex-col h-64">
+            <img
+              class="h-1/2 w-full object-cover rounded-tr border-b border-white"
+              src="/build/img/windows 3.jpg"
+              alt="Image 2"
+            />
+            <img
+              class="h-1/2 w-full object-cover"
+              src="/build/img/windows 4.jpg"
+              alt="Image 3"
+            />
+          </div>
+        </div>
+
+        <div class="p-5">
+          <a href="./contact.html">
+            <h5
+              class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+            >
+              Window
+            </h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            Ksh 7000
+          </p>
+          <a
+            href="./contact.html"
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Get In Touch
+            <svg
+              class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div
+        class="max-w-80 bg-white border border-gray-200 rounded-lg shadow dark:bg-slate-950 dark:border-gray-700"
+      >
+        <div class="grid grid-cols-2 p-0">
+          <!-- First Column (Single Image) -->
+          <img
+            class="h-64 w-full object-cover rounded-tl border-r border-white"
+            src="/build/img/img/im4.jpg"
+            alt="Image 1"
+          />
+
+          <!-- Second Column (Two Images) -->
+          <div class="flex flex-col h-64">
+            <img
+              class="h-1/2 w-full object-cover rounded-tr border-b border-white"
+              src="/build/img/img/im6.jpg"
+              alt="Image 2"
+            />
+            <img
+              class="h-1/2 w-full object-cover"
+              src="/build/img/img/im9.jpg"
+              alt="Image 3"
+            />
+          </div>
+        </div>
+
+        <div class="p-5">
+          <a href="./contact.html">
+            <h5
+              class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+            >
+              Swings
+            </h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            Ksh 25000
+          </p>
+          <a
+            href="./contact.html"
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Get In Touch
+            <svg
+              class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="my-10">
+      <div class="p-10 border border-slate-700 shadow-2xl mx-20 rounded">
+        <div class="grid lg:grid-cols-2">
+          <div class="mb-6 pt-20">
+            <a href="https://flowbite.com/" class="flex items-center">
+              <img
+                src="https://flowbite.com/docs/images/logo.svg"
+                class="h-8 me-3"
+                alt="FlowBite Logo"
+              />
+              <span
+                class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+                >Jaico steel fabricators</span
+              >
+            </a>
+            <div class="flex p-6">
+              <div class="mr-6">
+                <a
+                  class="hover:text-blue-800"
+                  href="https://www.linkedin.com/in/"
+                >
+                  <i class="fa-brands fa-linkedin fa-lg"></i>
+                </a>
+              </div>
+
+              <div class="mr-6">
+                <a
+                  class="hover:text-blue-800"
+                  href="https://www.instagram.com/"
+                >
+                  <i class="fa-brands fa-instagram fa-lg"></i>
+                </a>
+              </div>
+
+              <div class="mr-6">
+                <a class="hover:text-blue-800" href="https://www.tiktok.com/">
+                  <i class="fa-brands fa-tiktok fa-lg"></i>
+                </a>
+              </div>
+
+              <div class="mr-6">
+                <a class="hover:text-blue-800" href="https://www.tiktok.com/">
+                  <i class="fa-solid fa-envelope fa-lg"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid gap-6 md:grid-cols-3 sm:grid-cols-2">
+            <div>
+              <h2 class="mb-6 text-sm font-semibold text-blue-500 uppercase">
+                Products & Services
+              </h2>
+              <ul
+                class="list-none text-gray-500 dark:text-gray-400 font-medium"
+              >
+                <li class="mb-4">Fabrication services</li>
+                <li class="mb-4">Work on site services</li>
+                <li class="mb-4 max-w-60">
+                  Sub contraction services (partner with main contractor)
+                </li>
+                <li class="mb-4 max-w-60">
+                  Powder coating services (we have powder coating machines)
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h2 class="mb-6 text-sm font-semibold text-blue-500 uppercase">
+                Follow Us
+              </h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                  <a
+                    href="https://github.com/themesberg/flowbite"
+                    class="hover:underline"
+                    >Linked In</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a
+                    href="https://discord.gg/4eeurUVvTy"
+                    class="hover:underline"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a
+                    href="https://discord.gg/4eeurUVvTy"
+                    class="hover:underline"
+                    >Tiktok</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h2 class="mb-6 text-sm font-semibold text-blue-500 uppercase">
+                Contact Us
+              </h2>
+              <ul class="list-none font-medium">
+                <li class="mb-4">JAICO FABRICATION</li>
+                <li class="mb-4">
+                  Alexander Muiruri - Executive officer <span>0722525310</span>
+                </li>
+                <li class="mb-4">
+                  Jake Waithanji - Financial Officer <span>0714112494</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <hr
+          class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+        />
+
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+            >© 2024
+            <a href="https://flowbite.com/" class="hover:underline"
+              >Jaico Steel Fabricators™</a
+            >. All Rights Reserved.
+          </span>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+  </body>
+</html>
